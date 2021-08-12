@@ -5,5 +5,8 @@
 {% endblock %}
 
 {% block content %}
-<h1>Hello is test</h1>
+
+    {% for post in posts %}
+        {{ post.text }}
+    {% endfor %}
 {% endblock %}
